@@ -1,8 +1,4 @@
-# split_seed.py
-# ------------------------------------------------
-# Preprocess paintings: split (no overlap), scale on train,
-# save scaled CSVs, generate train-only pairs + seed pairs.
-# ------------------------------------------------
+
 
 import numpy as np
 import pandas as pd
