@@ -26,7 +26,7 @@ Objective_predictors = [
     "Horizontal_Symmetry", "Vertical_Symmetry"
 ]
 
-
+TARGET = ["Liking_M"]
 
 if "Painting" in df.columns:
     id_col = "Painting"
@@ -40,7 +40,7 @@ else:
 df = df.replace(["#NULL!", np.inf, -np.inf], np.nan)
 df = df.dropna(subset=Objective_predictors).reset_index(drop=True)
 
-TARGET = ["Liking_M"]
+
 
 #Train/Test split
 all_ids = df[id_col].astype(str).unique()
