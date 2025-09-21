@@ -67,7 +67,7 @@ y_test  = test_df[TARGET].to_numpy(float)
 print(f"Train n={len(y_train)} | Test n={len(y_test)} | Features={len(FEATURES)}")
 
 model = RandomForestRegressor(
-    n_estimators=400,
+    n_estimators=300,
     max_depth=None,
     min_samples_leaf=1,
     random_state=42,
