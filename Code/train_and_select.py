@@ -10,7 +10,7 @@ import random
 RESULTS_DIR = Path("Results")  # outputs will be written here
 
 NUM_SEED_PAIRS = 50
-RANDOM_SEED = 42 
+
 
 #Load dataset
 df = pd.read_csv("Data/Representational_Data.csv")
@@ -44,7 +44,6 @@ df = df.dropna(subset=Objective_predictors).reset_index(drop=True)
 
 
 TARGET = ["Liking_M"]
-
 
 #Train/Test split
 all_ids = df[id_col].astype(str).unique()
@@ -82,7 +81,7 @@ pd.DataFrame(all_pairs, columns=["painting1", "painting2"]).to_csv(
 
 #Sample seed pairss
 print(f"Sampling {NUM_SEED_PAIRS} seed pairs...")
-rng = np.random.default_rng(RANDOM_SEED)
+rng = np.random.default_rng(42)
 num_seed = min(NUM_SEED_PAIRS, len(all_pairs))
 seed_idx = random.sample(range(len(all_pairs)), num_seed)
 
