@@ -1,0 +1,5 @@
+model,score,source_csv
+LASSO,0.6374035061464323,Results/WithinRater/Representational/CSV/top2_Beauty_lasso.csv
+RIDGE,0.6373814549678702,Results/WithinRater/Representational/CSV/top2_Beauty_ridge.csv
+RF,0.5500399863836767,Results/WithinRater/Representational/CSV/top2_Beauty_rf.csv
+GBRT,0.5155855018726664,Results/WithinRater/Representational/CSV/top2_Beauty_gbrt.csv
